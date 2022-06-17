@@ -977,6 +977,18 @@
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1)
 }
 
+.input-modal:hover,
+.input-modal:focus {
+    border-color: var(--titel-text-color);
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1)
+}
+
+.input-modal:hover + .Check-icon,
+.input-modal:focus + .Check-icon {
+    fill: var(--titel-text-color);
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
+}
+
 .input-textarea {
     padding-top: 12px;
     padding-left: 16px;
@@ -1009,6 +1021,7 @@
     line-height: 24px;
     letter-spacing: 0.03em;
     color: #757575;
+    cursor:pointer;
 }
 
 .checkbox-box {
@@ -1024,11 +1037,11 @@
     height: 15px;
     border: 2px solid #212121;
     border-radius: 2px;
+    cursor:pointer;
 }
 
 .input-checkbox {
     position: absolute;
-    cursor:pointer;
 }
 
 .input-checkbox:checked + .checkbox-box {
@@ -1081,15 +1094,7 @@
     transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.input-modal:focus,
-.input-modal:hover {
-    border-color: var(--titel-text-color);
-    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1)
+.input-checkbox:hover + .checkbox-box,
+.input-checkbox:focus + .checkbox-box {
+border-color: var(--titel-text-color);
 }
-
-.modal-label:focus .Check-icon,
-.modal-label:hover .Check-icon {
-    fill: var(--titel-text-color);
-    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1)
-} 
-
